@@ -1,40 +1,49 @@
 <ion-header>
-  <ion-toolbar color="primary">
-    <ion-buttons slot="start">
-      <ion-back-button defaultHref="home"></ion-back-button>
-    </ion-buttons>
-    <ion-title>Agregar Amigo</ion-title>
-  </ion-toolbar>
+    <ion-toolbar color="primary">
+        <ion-buttons slot="start">
+            <ion-back-button defaultHref="home"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Agregar Amigo</ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
-  <div text-center>
-    <ion-row no-padding>
-      <ion-col size="6" offset="3">
-        <img [src]="image" alt="this is the image" width = "128" height = "128"/>
-      </ion-col>
-    </ion-row>
-    <ion-row no-padding>
-      <ion-col size="6" offset="3">
-        <ion-button fill="clear" expand="block" size="small" (click)="openImagePicker()">Elegir Foto</ion-button>
-      </ion-col>
-    </ion-row>
-  </div>
-  <form [formGroup]="validations_form" (ngSubmit)="onSubmit(validations_form.value)">
+    <div text-center>
+        <ion-row no-padding>
+            <ion-col size="6" offset="3">
+                <img [src]="image" alt="this is the image" width="128" height="128" />
+            </ion-col>
+        </ion-row>
+        <ion-row no-padding>
+            <ion-col size="6" offset="3">
+                <ion-button fill="clear" expand="block" size="small" (click)="openImagePicker()">Elegir Foto</ion-button>
+            </ion-col>
+        </ion-row>
+    </div>
+    <form [formGroup]="validations_form" (ngSubmit)="onSubmit(validations_form.value)">
 
-    <ion-item>
-      <ion-label>Nombre:</ion-label>
-      <ion-input type="text" formControlName="title"></ion-input>
-    </ion-item>
+        <ion-item>
+            <ion-label>Ocupacion</ion-label>
+            <ion-input type="text" formControlName="title"></ion-input>
+        </ion-item>
 
-    <ion-item>
-        <ion-label>Telefono: +52</ion-label>
-        <ion-input type="number" formControlName="description" maxlength="8"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label>demo:</ion-label>
-      <ion-input formControlName="demo"></ion-input>
-    </ion-item>
-    <ion-button class="submit-btn" expand="block" type="submit">Agregar</ion-button>
-  </form>
+
+        <ion-item>
+            <ion-label>Categorias</ion-label>
+            <ion-select formControlName="description" placeholder="Select One">
+                <ion-select-option value="Comida">Comida</ion-select-option>
+                <ion-select-option value="Negocios">Negocios</ion-select-option>
+                <ion-select-option value="Traducciones">Traducciones</ion-select-option>
+                <ion-select-option value="Diseño">Diseño</ion-select-option>
+                <ion-select-option value="Soporte tecnico">Soporte tecnico</ion-select-option>
+                <ion-select-option value="Desarrollo">Desarrollo</ion-select-option>
+            </ion-select>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Description</ion-label>
+            <ion-input formControlName="demo"></ion-input>
+        </ion-item>
+        <ion-button class="submit-btn" expand="block" type="submit">Agregar</ion-button>
+    </form>
 </ion-content>
