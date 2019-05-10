@@ -5,13 +5,13 @@
 export const environment = {
   production: false,
   firebase : {
-    apiKey: "AIzaSyDr-irU4AecxScIRzw40_zZzD3_HTE4z0A",
-    authDomain: "polihacks2019.firebaseapp.com",
-    databaseURL: "https://polihacks2019.firebaseio.com",
-    projectId: "polihacks2019",
-    storageBucket: "polihacks2019.appspot.com",
-    messagingSenderId: "97422902557",
-    appId: "1:97422902557:web:49ca5ad6897c9db8"
+    apiKey: "AIzaSyDCTS88oMMTzaJGCRSougq3_n2IX4AwaI0",
+    authDomain: "mamaluchona-31a9a.firebaseapp.com",
+    databaseURL: "https://mamaluchona-31a9a.firebaseio.com",
+    projectId: "mamaluchona-31a9a",
+    storageBucket: "mamaluchona-31a9a.appspot.com",
+    messagingSenderId: "386383919473",
+    appId: "1:386383919473:web:643924012e0719f4"
   }
 };
 
